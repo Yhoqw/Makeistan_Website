@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdfdf6;
+  color: #1c1c1c;
+  line-height: 1.75;
+}
+
+header {
+  background-color: #e6f0f6;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #c3d9e8;
+}
+
+header img {
+  height: 50px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li{
+    margin-right: 20px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #004c8c;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #0066bb;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f1f7fb;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #004c8c;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #00325e;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #1a1a1a;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00325e;
+}
+
+.section h3,
+.section h4 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #004c8c;
+}
+
+.section ul,
+.section ol {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+}
+
+.cta {
+  background-color: #004c8c;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+}
+
+.cta a {
+  background-color: white;
+  color: #004c8c;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.cta a:hover {
+  background-color: #004c8c;
+  color: white;
+  border: 1px solid white;
+}
+
+footer {
+  background-color: #e6f0f6;
+  padding: 2rem;
+  text-align: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+}
